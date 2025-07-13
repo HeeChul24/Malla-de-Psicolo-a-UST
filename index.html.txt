@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Psicología</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #b76ba3;
+    }
+    .semestre {
+      margin-bottom: 40px;
+      padding: 15px;
+      border-left: 8px solid #cdb4db;
+      background-color: #fceefc;
+      border-radius: 10px;
+    }
+    .semestre h2 {
+      color: #8e6ca8;
+    }
+    .asignatura {
+      background-color: #f8edeb;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 6px;
+      border-left: 6px solid #ffc8dd;
+      position: relative;
+    }
+    .asignatura[data-prerrequisito]::after {
+      content: "🔗";
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 1.2em;
+    }
+    .linea {
+      margin: 5px 0 20px 15px;
+      color: #555;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Malla Curricular Psicología - Plan 12</h1>
+
+<!-- SEMESTRES -->
+<div class="semestre">
+  <h2>1° Semestre</h2>
+  <div class="asignatura">Fundamentos de la Psicología</div>
+  <div class="asignatura">Psicología del Desarrollo I</div>
+  <div class="asignatura">Antropología Social</div>
+  <div class="asignatura">Taller I: Autoconocimiento</div>
+  <div class="asignatura">Taller de Competencias para el Aprendizaje</div>
+  <div class="asignatura">Taller de Competencias Comunicativas</div>
+  <div class="asignatura">Taller de Desarrollo Personal I</div>
+</div>
+
+<div class="semestre">
+  <h2>2° Semestre</h2>
+  <div class="asignatura">Psicobiología</div>
+  <div class="asignatura">Psicología del Desarrollo II</div>
+  <div class="asignatura">Teorías Psicoanalíticas</div>
+  <div class="asignatura">Taller II: Relaciones Humanas</div>
+  <div class="asignatura">Teorías Cognitivas</div>
+  <div class="asignatura">Pensamiento Matemático para Ciencias Sociales</div>
+  <div class="asignatura">Taller de Desarrollo Personal II</div>
+</div>
+
+<div class="semestre">
+  <h2>3° Semestre</h2>
+  <div class="asignatura" data-prerrequisito="Psicobiología">Procesos Neuropsicológicos I</div>
+  <div class="asignatura">Psicología de la Personalidad</div>
+  <div class="asignatura">Epistemología de la Ciencia Psicológica</div>
+  <div class="asignatura">Teorías Sistémicas</div>
+  <div class="asignatura">Teorías Humanistas</div>
+  <div class="asignatura">Inglés Básico I</div>
+  <div class="asignatura">Cultura y Valores</div>
+</div>
+
+<div class="semestre">
+  <h2>4° Semestre</h2>
+  <div class="asignatura" data-prerrequisito="Psicobiología">Procesos Neuropsicológicos II</div>
+  <div class="asignatura">Psicología Social</div>
+  <div class="asignatura">Psicopatología del Adulto</div>
+  <div class="asignatura" data-prerrequisito="Inglés Básico I">Inglés Básico II</div>
+  <div class="asignatura">Persona y Sentido</div>
+  <div class="asignatura">MECPSI HITO 1</div>
+</div>
+
+<div class="semestre">
+  <h2>5° Semestre</h2>
+  <div class="asignatura">Políticas Sociales</div>
+  <div class="asignatura">Psicología Comunitaria</div>
+  <div class="asignatura">Investigación Cuantitativa</div>
+  <div class="asignatura">Psicología Organizacional y del Trabajo</div>
+  <div class="asignatura">Evaluación Psicológica Cognitiva</div>
+  <div class="asignatura">Psicopatología Infanto Juvenil</div>
+</div>
+
+<div class="semestre">
+  <h2>6° Semestre</h2>
+  <div class="asignatura">Psicología Educacional</div>
+  <div class="asignatura" data-prerrequisito="Psicología Comunitaria">Diagnóstico en Psicología Comunitaria</div>
+  <div class="asignatura">Estadística para la Psicología</div>
+  <div class="asignatura" data-prerrequisito="Psicología Organizacional y del Trabajo">Diagnóstico en Psicología Organizacional</div>
+  <div class="asignatura" data-prerrequisito="Psicopatología del Adulto">Evaluación Socioafectiva</div>
+</div>
+
+<div class="semestre">
+  <h2>7° Semestre</h2>
+  <div class="asignatura" data-prerrequisito="Psicología Educacional">Diagnóstico en Psicología Educacional</div>
+  <div class="asignatura">Psicología Clínica y Psicoterapia</div>
+  <div class="asignatura">Psicometría</div>
+  <div class="asignatura" data-prerrequisito="Evaluación Psicológica Cognitiva, Psicopatología Infanto Juvenil, Evaluación Socioafectiva">Diagnóstico en Psicología Clínica</div>
+  <div class="asignatura">Taller III: Identidad Profesional</div>
+  <div class="asignatura">Electivo I</div>
+</div>
+
+<div class="semestre">
+  <h2>8° Semestre</h2>
+  <div class="asignatura" data-prerrequisito="Diagnóstico en Psicología Educacional, Diagnóstico en Psicología Comunitaria, Diagnóstico en Psicología Organizacional, Diagnóstico en Psicología Clínica">Intervención Psicológica I</div>
+  <div class="asignatura" data-prerrequisito="Estadística para la Psicología">Proyecto de Investigación en Psicología</div>
+  <div class="asignatura">Taller IV: Ética Profesional en Psicología</div>
+  <div class="asignatura">Electivo II</div>
+</div>
+
+<div class="semestre">
+  <h2>9° Semestre</h2>
+  <div class="asignatura" data-prerrequisito="Intervención Psicológica I">Intervención Psicológica II</div>
+  <div class="asignatura" data-prerrequisito="Proyecto de Investigación en Psicología">Seminario de Investigación en Psicología</div>
+  <div class="asignatura" data-prerrequisito="Taller III: Identidad Profesional">Taller V: Autocuidado</div>
+  <div class="asignatura">Electivo III</div>
+</div>
+
+<div class="semestre">
+  <h2>10° Semestre</h2>
+  <div class="asignatura" data-prerrequisito="Intervención Psicológica II">Práctica Profesional Psicológica</div>
+  <div class="asignatura" data-prerrequisito="Seminario de Investigación en Psicología">Examen de Título y Grado</div>
+</div>
+
+</body>
+</html>
